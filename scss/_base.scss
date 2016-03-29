@@ -390,59 +390,19 @@ h2.comment, .comment{
 		background:#999;
 	}
 	&.youtube{
-		span{
-			background:$color-youtube;
-		}
-		span::after{
-			border-top:$color-youtube solid 0.5em;
-		}
-		path{
-			fill:$color-youtube;
-		}
+		@include colorMeIcon($color-youtube);
 	}
 	&.treehouse{
-		span{
-			background:$color-treehouse;
-		}
-		span::after{
-			border-top:$color-treehouse solid 0.5em;
-		}
-		path{
-			fill:$color-treehouse;
-		}
+		@include colorMeIcon($color-treehouse);
 	}
 	&.facebook{
-		span{
-			background:$color-facebook;
-		}
-		span::after{
-			border-top:$color-facebook solid 0.5em;
-		}
-		path{
-			fill:$color-facebook;
-		}
+		@include colorMeIcon($color-facebook);
 	}
 	&.twitter{
-		span{
-			background:$color-twitter;
-		}
-		span::after{
-			border-top:$color-twitter solid 0.5em;
-		}
-		path{
-			fill:$color-twitter;
-		}
+		@include colorMeIcon($color-twitter);
 	}
 	&.linkedin{
-		span{
-			background:$color-linkedin;
-		}
-		span::after{
-			border-top:$color-linkedin solid 0.5em;
-		}
-		path{
-			fill:$color-linkedin;
-		}
+		@include colorMeIcon($color-linkedin);
 	}
 
 }

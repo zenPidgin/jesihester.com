@@ -232,6 +232,8 @@ td, th {
   padding: 0;
 }
 
+/* My Mixins */
+/* Icons - Assign colors */
 @font-face {
   font-family: 'WebHostingHub-Glyphs';
   src: url("../font/webhostinghub-glyphs.eot");
@@ -11484,63 +11486,63 @@ h2.comment, .comment {
   display: block;
   background: #999;
 }
-/* line 393, ../scss/_base.scss */
+/* line 6, ../scss/_mixins.scss */
 .social a:hover.youtube span {
   background: #bb5151;
 }
-/* line 396, ../scss/_base.scss */
+/* line 9, ../scss/_mixins.scss */
 .social a:hover.youtube span::after {
   border-top: #bb5151 solid 0.5em;
 }
-/* line 399, ../scss/_base.scss */
+/* line 12, ../scss/_mixins.scss */
 .social a:hover.youtube path {
   fill: #bb5151;
 }
-/* line 404, ../scss/_base.scss */
+/* line 6, ../scss/_mixins.scss */
 .social a:hover.treehouse span {
   background: #5fcf80;
 }
-/* line 407, ../scss/_base.scss */
+/* line 9, ../scss/_mixins.scss */
 .social a:hover.treehouse span::after {
   border-top: #5fcf80 solid 0.5em;
 }
-/* line 410, ../scss/_base.scss */
+/* line 12, ../scss/_mixins.scss */
 .social a:hover.treehouse path {
   fill: #5fcf80;
 }
-/* line 415, ../scss/_base.scss */
+/* line 6, ../scss/_mixins.scss */
 .social a:hover.facebook span {
   background: #3b5998;
 }
-/* line 418, ../scss/_base.scss */
+/* line 9, ../scss/_mixins.scss */
 .social a:hover.facebook span::after {
   border-top: #3b5998 solid 0.5em;
 }
-/* line 421, ../scss/_base.scss */
+/* line 12, ../scss/_mixins.scss */
 .social a:hover.facebook path {
   fill: #3b5998;
 }
-/* line 426, ../scss/_base.scss */
+/* line 6, ../scss/_mixins.scss */
 .social a:hover.twitter span {
   background: #00aced;
 }
-/* line 429, ../scss/_base.scss */
+/* line 9, ../scss/_mixins.scss */
 .social a:hover.twitter span::after {
   border-top: #00aced solid 0.5em;
 }
-/* line 432, ../scss/_base.scss */
+/* line 12, ../scss/_mixins.scss */
 .social a:hover.twitter path {
   fill: #00aced;
 }
-/* line 437, ../scss/_base.scss */
+/* line 6, ../scss/_mixins.scss */
 .social a:hover.linkedin span {
   background: #007bb6;
 }
-/* line 440, ../scss/_base.scss */
+/* line 9, ../scss/_mixins.scss */
 .social a:hover.linkedin span::after {
   border-top: #007bb6 solid 0.5em;
 }
-/* line 443, ../scss/_base.scss */
+/* line 12, ../scss/_mixins.scss */
 .social a:hover.linkedin path {
   fill: #007bb6;
 }
@@ -11548,19 +11550,19 @@ h2.comment, .comment {
 /* ids */
 /* Media Queries */
 @media (min-width: 878px) {
-  /* line 454, ../scss/_base.scss */
+  /* line 414, ../scss/_base.scss */
   body {
     background-size: cover;
     /*flex-direction:row;*/
     flex: 1;
   }
 
-  /* line 459, ../scss/_base.scss */
+  /* line 419, ../scss/_base.scss */
   .mainContent div {
     /*flex-basis:525px;*/
   }
 
-  /* line 463, ../scss/_base.scss */
+  /* line 423, ../scss/_base.scss */
   .main-header,
   .row,
   .footer-inner {
@@ -11569,60 +11571,60 @@ h2.comment, .comment {
     max-width: 1150px;
   }
 
-  /* line 470, ../scss/_base.scss */
+  /* line 430, ../scss/_base.scss */
   .tagline {
     font-size: 1.4em;
   }
 
-  /* line 473, ../scss/_base.scss */
+  /* line 433, ../scss/_base.scss */
   .wrapper {
     display: flex;
     flex-direction: column;
     min-height: 820px;
   }
-  /* line 477, ../scss/_base.scss */
+  /* line 437, ../scss/_base.scss */
   .wrapper .mainContent {
     align-self: flex-end;
   }
 
-  /* line 481, ../scss/_base.scss */
+  /* line 441, ../scss/_base.scss */
   .mainContent, .intro {
     max-width: 1100px;
     margin: 0 auto;
   }
 
-  /* line 485, ../scss/_base.scss */
+  /* line 445, ../scss/_base.scss */
   .intro {
     display: block;
     padding: 0.5em;
   }
 
-  /* line 489, ../scss/_base.scss */
+  /* line 449, ../scss/_base.scss */
   .threeWords span {
     display: inline !important;
   }
 }
 @media (min-width: 1100px) {
-  /* line 494, ../scss/_base.scss */
+  /* line 454, ../scss/_base.scss */
   h1, h2, h3, h4, h5, h6 {
     text-align: left;
   }
 
-  /* line 497, ../scss/_base.scss */
+  /* line 457, ../scss/_base.scss */
   .wrapper {
     flex-flow: row wrap;
   }
-  /* line 499, ../scss/_base.scss */
+  /* line 459, ../scss/_base.scss */
   .wrapper > * {
     flex: 1 100%;
   }
 
-  /* line 503, ../scss/_base.scss */
+  /* line 463, ../scss/_base.scss */
   .intro {
     display: flex;
   }
 
-  /* line 506, ../scss/_base.scss */
+  /* line 466, ../scss/_base.scss */
   .header .container, .mainContent {
     display: flex;
     flex-wrap: wrap;
@@ -11630,59 +11632,59 @@ h2.comment, .comment {
     justify-content: space-between;
   }
 
-  /* line 512, ../scss/_base.scss */
+  /* line 472, ../scss/_base.scss */
   .mainContent div {
     /*flex-basis:525px;*/
   }
 
-  /* line 515, ../scss/_base.scss */
+  /* line 475, ../scss/_base.scss */
   .mainNav {
     display: flex;
     width: initial;
   }
-  /* line 518, ../scss/_base.scss */
+  /* line 478, ../scss/_base.scss */
   .mainNav li {
     display: flex;
   }
-  /* line 520, ../scss/_base.scss */
+  /* line 480, ../scss/_base.scss */
   .mainNav li a {
     align-self: center;
   }
 
-  /* line 526, ../scss/_base.scss */
+  /* line 486, ../scss/_base.scss */
   .header {
     height: 100px;
   }
-  /* line 528, ../scss/_base.scss */
+  /* line 488, ../scss/_base.scss */
   .header a.logoLink {
     width: auto;
   }
 
-  /* line 532, ../scss/_base.scss */
+  /* line 492, ../scss/_base.scss */
   .wrap {
     background-color: #fff;
   }
-  /* line 536, ../scss/_base.scss */
+  /* line 496, ../scss/_base.scss */
   .wrap.first {
     align-self: flex-end;
   }
 
-  /* line 540, ../scss/_base.scss */
+  /* line 500, ../scss/_base.scss */
   .intro {
     padding: 2em;
     min-height: 450px;
   }
 
-  /* line 544, ../scss/_base.scss */
+  /* line 504, ../scss/_base.scss */
   .project {
     display: flex;
     flex-direction: row;
   }
-  /* line 547, ../scss/_base.scss */
+  /* line 507, ../scss/_base.scss */
   .project aside {
     margin-right: 1em;
   }
-  /* line 549, ../scss/_base.scss */
+  /* line 509, ../scss/_base.scss */
   .project aside img {
     max-width: 100%;
   }

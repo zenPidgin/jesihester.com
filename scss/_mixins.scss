@@ -1,0 +1,15 @@
+/* My Mixins */
+
+/* Icons - Assign colors */
+
+@mixin colorMeIcon($color){
+	span{
+		background:$color;
+	}
+	span::after{
+		border-top:$color solid 0.5em;
+	}
+	path{
+		fill:$color;
+	}
+}
