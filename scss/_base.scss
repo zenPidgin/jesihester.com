@@ -9,7 +9,7 @@ body,html{
 	height:100% !important;
 }
 body{
-	min-width:380px;
+	min-width:320px;
 	font-family: 'Open Sans', sans-serif;
 	/* for sticky footer */
 	display:flex;
@@ -87,6 +87,7 @@ section{
 .header > .container{
 	padding-top:0;
 	padding-left:0;
+	padding-right:0;
 }
 .header .logo{
 	min-width:100%;
@@ -341,6 +342,111 @@ h2.comment, .comment{
 	color: $color-comm;
 	font-style: italic;
 }
+
+.social{
+	width:100%;
+	text-align:center;
+	svg{
+		width:20px;
+		height:20px;
+		margin:0.3em 1em;
+	}
+	
+	a{
+		position:relative;
+		path{
+			fill: #848484;
+		}
+		span{
+			display:none;
+			color: #fff;
+		    position: absolute;
+		    left: -100%;
+		    right: -100%;
+		    text-align: center;
+		    padding: 0.5em;
+		    top: -275%;
+		    z-index: 1;
+		    border-radius: 5px;
+		    &::after{
+		    	content: "";
+			    position: absolute;
+			    top: 100%;
+			    left: 50%;
+			    margin-left: -10px;
+			    border-left: transparent solid 0.5em;
+			    border-right: transparent solid 0.5em;
+			    border-bottom: transparent solid 0.5em;
+		    }
+		}
+		
+	}
+	
+}
+/* hover state */
+.social a:hover{
+	span{
+		display:block;
+		background:#999;
+	}
+	&.youtube{
+		span{
+			background:$color-youtube;
+		}
+		span::after{
+			border-top:$color-youtube solid 0.5em;
+		}
+		path{
+			fill:$color-youtube;
+		}
+	}
+	&.treehouse{
+		span{
+			background:$color-treehouse;
+		}
+		span::after{
+			border-top:$color-treehouse solid 0.5em;
+		}
+		path{
+			fill:$color-treehouse;
+		}
+	}
+	&.facebook{
+		span{
+			background:$color-facebook;
+		}
+		span::after{
+			border-top:$color-facebook solid 0.5em;
+		}
+		path{
+			fill:$color-facebook;
+		}
+	}
+	&.twitter{
+		span{
+			background:$color-twitter;
+		}
+		span::after{
+			border-top:$color-twitter solid 0.5em;
+		}
+		path{
+			fill:$color-twitter;
+		}
+	}
+	&.linkedin{
+		span{
+			background:$color-linkedin;
+		}
+		span::after{
+			border-top:$color-linkedin solid 0.5em;
+		}
+		path{
+			fill:$color-linkedin;
+		}
+	}
+
+}
+
 /* ids */
 
 /* Media Queries */
